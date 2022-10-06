@@ -1,0 +1,8 @@
+---
+Name: mainroutes
+After:
+  - '#coreroutes'
+---
+SilverStripe\Control\Director:
+  rules:
+    "login": "UserController"

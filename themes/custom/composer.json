@@ -1,0 +1,27 @@
+{
+    "name": "silverstripe-themes/custom",
+    "description": "The SilverStripe custom theme",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Simplicity"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=3.5"
+    },
+	"extra": {
+		"branch-alias": {
+			"dev-master": "3.2.x-dev"
+		},
+        "expose": [
+            "css",
+            "images",
+            "javascript",
+            "webfonts"
+        ]
+	}
+}
