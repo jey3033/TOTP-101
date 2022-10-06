@@ -8,7 +8,7 @@
     </form>
 </section>
 
-<div class="modal" id="modal-totp" tabindex="-1">
+<div class="modal" id="modal-totp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -30,7 +30,8 @@
                 data: $('#form-login').serialize(),
                 async: true,
                 success: function(result) {
-                    let decResult = $.parseJSON(result);
+                    $('#totp-body').html("<img src='"+result+"'>");
+                    $('#modal-totp').show();
                 }
             })
         })
